@@ -34,3 +34,7 @@ if __name__ == "__main__":
     numCourses = 2
     preReq = [[1,0]]
     print("Output is:", sol.canFinish(numCourses, preReq))
+    
+    numCourses = 2
+    preReq = [[1,0],[0,1]]
+    print("Output is:", sol.canFinish(numCourses, preReq))
