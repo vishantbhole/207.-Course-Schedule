@@ -23,3 +23,18 @@ class Solution:
             visited.remove(course)
             preReq[course] = []
             return True
+
+        for course in range(numCourses):
+                if not dfs(course): return False
+            return True
+
+# Example usage
+if __name__ == "__main__":
+    sol = Solution()
+    numCourses = 2
+    preReq = [[1,0]]
+    print("Output is:", sol.canFinish(numCourses, preReq))
+    
+    numCourses = 2
+    preReq = [[1,0],[0,1]]
+    print("Output is:", sol.canFinish(numCourses, preReq))
